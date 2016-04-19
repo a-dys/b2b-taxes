@@ -1,4 +1,7 @@
 export class MonthModel {
+
+    public selectedMonth:MonthModel;
+
     constructor (
         public title:string = "",
         public status:string = "opened"
@@ -9,5 +12,10 @@ export class MonthModel {
             this.status == "opened"
             ? "closed"
             : "opened";
+    }
+
+    show():void{
+        console.log("Details show!");
+        console.log(this);
     }
 };

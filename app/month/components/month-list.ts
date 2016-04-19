@@ -12,6 +12,7 @@ import {MonthItemRenderer} from "./month-item-renderer"
                 <month-item-renderer
                 [month]="month"
                 (toggle)="monthService.toggleMonthStatus($event)"
+                (show)="monthService.showMonthDetails($event, month)"
                 ></month-item-renderer>
             </li>
         </ul>

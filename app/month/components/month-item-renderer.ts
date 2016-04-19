@@ -12,10 +12,12 @@ import {ViewEncapsulation} from "angular2/core";
     <div>
     <span [ngClass]="month.status">{{month.title}}</span>
     <button (click)="toggle.emit(month)">Toggle</button>
+    <button (click)="show.emit(month)">Show</button>
     </div>`
 })
 
 export class MonthItemRenderer{
     @Input() month;
     @Output() toggle = new EventEmitter();
+    @Output() show = new EventEmitter();
 }
