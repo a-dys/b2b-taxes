@@ -4,7 +4,9 @@ export class MonthModel {
 
     constructor (
         public title:string = "",
-        public status:string = "opened"
+        public status:string = "opened",
+        public income:number = 0,
+        public tax:number = 0
     ){}
 
     toggle():void{

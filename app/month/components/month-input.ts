@@ -19,7 +19,6 @@ export class MonthInput {
 
     onSubmit(value){
         this.monthService.addMonth(this.monthModel);
-        console.log(this.monthService.months);
         this.monthModel = new MonthModel();
     }
 }

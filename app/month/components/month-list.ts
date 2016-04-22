@@ -6,7 +6,7 @@ import {MonthDetails} from "./month-details";
 
 @Component({
     selector: 'month-list',
-    directives: [MonthItemRenderer,MonthDetails],
+    directives: [MonthItemRenderer, MonthDetails],
     template: `<div>
         <ul>
             <!--'*' this is directive which going to change element itself-->
