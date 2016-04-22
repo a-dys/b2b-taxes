@@ -2,10 +2,11 @@ import {Component, Input} from "angular2/core"
 import {MonthService} from "./../services/month-service"
 import {MonthItemRenderer} from "./month-item-renderer"
 import {MonthModel} from "./../services/month-model"
+import {MonthDetails} from "./month-details";
 
 @Component({
     selector: 'month-list',
-    directives: [MonthItemRenderer],
+    directives: [MonthItemRenderer,MonthDetails],
     template: `<div>
         <ul>
             <!--'*' this is directive which going to change element itself-->
@@ -18,15 +19,7 @@ import {MonthModel} from "./../services/month-model"
                     ></month-item-renderer>
             </li>
         </ul>
-
-        <div *ngIf="selectedMonth">
-          <h2>{{selectedMonth.title}} details!</h2>
-          <div><label>id: </label>{{selectedMonth.status}}</div>
-          <div>
-            <label>name: </label>
-            <input [(ngModel)]="selectedMonth.title" placeholder="name"/>
-          </div>
-        </div>
+        <month-details [month]="selectedMonth"></month-details>
     </div>`
 })
 
