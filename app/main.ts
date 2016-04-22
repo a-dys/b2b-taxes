@@ -15,7 +15,7 @@ import {MonthDetails} from "./month/components/month-details";
     [status]="status"
     [term]="term"
     ></month-list>
-    <month-details [month]="selectedMonth"></month-details>
+    <month-details></month-details>
     </div>`
 })
 class App{}

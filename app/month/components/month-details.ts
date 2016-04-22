@@ -7,7 +7,6 @@ import {MonthModel} from "./../services/month-model"
     directives: [MonthDetails],
     template: `<div>
             <span>:)</span>
-            <span>{{monthService.months}}</span>
         </div>`
 })
 

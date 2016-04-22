@@ -23,8 +23,4 @@ export class MonthService {
             ...this.months.slice(i + 1)
         ];
     }
-
-    showMonthDetails(month:MonthModel) {
-        month.show();
-    }
 }

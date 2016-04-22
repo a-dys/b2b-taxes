@@ -13,9 +13,4 @@ export class MonthModel {
             ? "closed"
             : "opened";
     }
-
-    show():void{
-        console.log("Details show!");
-        console.log(this);
-    }
 };
